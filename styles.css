@@ -1,1 +1,32 @@
+.row1{
+        display: flex;
+        flex-direction: row;
+        border: 1px, black;      
+}
+.row2{
+        display: flex;
+        flex-direction: row;
+        border: 1px, black;      
+}
+.row3{
+        display: flex;
+        flex-direction: row;
+        border: 1px, black;      
+}
+.row4{
+        display: flex;
+        flex-direction: row;
+        border: 1px, black;      
+}
+.box{
+        background-color: blue;
+        margin: 2px;
+        padding: 5px;
+        min-width: 100px;
+        min-height: 100px;
+        color: white;
+        font-size: xx-large;
+        text-align: center;
 
+
+}
