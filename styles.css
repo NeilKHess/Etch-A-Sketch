@@ -1,14 +1,10 @@
-.gridCanvas{
-        display: flex;
-        flex: 0 0 95%;
+#gridArea {
         background-color: gray;
 }
 
-#gridCanvas{
-        list-style-type: none;
+.oneSquare{
+        align-content: center;
+        background-color: green;
+        margin: 20px;
 }
-#generateButton {
-        justify-self: center;
-}
-
 /* Need to make a flexgrid that will max shrink the box margin to 960/sideLen */
