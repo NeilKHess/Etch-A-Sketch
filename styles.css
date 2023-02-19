@@ -1,7 +1,7 @@
 #gridArea {
         display: flex;
         flex-wrap: wrap;
-        background-color: gray;
+        background-color: rgb(229, 225, 225);
         width: 500px;
         height: 500px;
         justify-content: center;
@@ -11,12 +11,11 @@
 .oneSquare{
         align-content: center;
         background-color: limegreen;
-        margin: 20px;
-        padding: 2px;
+        margin: 0px;
+        padding: 0px;
         opacity: 0%;
 }
 
 .revealed{
         opacity: 100%
 }
-/* Need to make a flexgrid that will max shrink the box margin to 960/sideLen *a/
