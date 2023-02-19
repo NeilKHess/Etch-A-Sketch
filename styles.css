@@ -1,15 +1,19 @@
+body{
+        background: rgb(73, 88, 143);
+}
+
 #gridArea {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat((sideLen), 1fr);
+        grid-template-rows: repeat((sideLen), 1fr);;
         background-color: rgb(229, 225, 225);
-        width: 500px;
-        height: 500px;
-        justify-content: center;
-        align-items: center;
+        width: 960px;
+        height: 960px;
+        margin: 0px;
+        padding:0px;
 }
 
 .oneSquare{
-        align-content: center;
         background-color: limegreen;
         margin: 0px;
         padding: 0px;
@@ -18,4 +22,8 @@
 
 .revealed{
         opacity: 100%
+}
+
+:root{
+        
 }
