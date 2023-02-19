@@ -3,6 +3,16 @@ const gridBreak = document.createElement("br");
 const genButton = document.querySelector("#generateButton");
 
 genButton.addEventListener("click", function(){
+    
+    //Clears results of any previous funcion call
+    function removeAllChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }}
+    const gridArea = document.querySelector('#gridArea');
+    removeAllChildNodes(gridArea);
+
+    //Main function
     let sideLenPrompt = prompt("How large would you like the sides of your square to be?")
     let sideLen = sideLenPrompt;
     let divGen = function(sideLen)
