@@ -12,6 +12,8 @@ let divGen = function(sideLen)
                 divBox.style.background = "limegreen";
                 divBox.style.margin = "2px";
                 divBox.classList.add("oneSquare");
+                divBox.addEventListener("mouseenter",function() {divBox.classList.add("revealed")})
+                divBox.addEventListener("mouseout",function() {divBox.classList.remove("revealed")})
                     gridArea.append(divBox);}  
                     };
 divGen(sideLen);

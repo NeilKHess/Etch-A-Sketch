@@ -13,5 +13,10 @@
         background-color: limegreen;
         margin: 20px;
         padding: 2px;
+        opacity: 0%;
+}
+
+.revealed{
+        opacity: 100%
 }
 /* Need to make a flexgrid that will max shrink the box margin to 960/sideLen *a/
