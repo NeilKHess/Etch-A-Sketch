@@ -4,13 +4,11 @@ body{
 
 #gridArea {
         display: grid;
-        grid-template-columns: repeat((sideLen), 1fr);
-        grid-template-rows: repeat((sideLen), 1fr);;
         background-color: rgb(229, 225, 225);
         width: 960px;
         height: 960px;
         margin: 0px;
-        padding:0px;
+        padding: 0px;
 }
 
 .oneSquare{
@@ -22,8 +20,4 @@ body{
 
 .revealed{
         opacity: 100%
-}
-
-:root{
-        
 }

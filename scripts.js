@@ -13,21 +13,22 @@ genButton.addEventListener("click", function(){
     removeAllChildNodes(gridArea);
 
     //Grid Generator
-    let sideLenPrompt = prompt("How large would you like the sides of your square to be?")
+    {let sideLenPrompt = prompt("How large would you like the sides of your square to be? (Max value = 100)")
     let sideLen = sideLenPrompt;
-    let divGen = function(sideLen)
-    {for (j = 0; j < sideLen; j++)  
+    let divGen = function(sideLen){
+        for (j = 0; j < sideLen; j++)  
         for (i = 0; i < sideLen; i++) {
             const divBox = document.createElement("div");
+                gridArea.style.gridTemplateColumns = `repeat(${sideLen}, 1fr)`;
+                gridArea.style.gridTemplateRows = `repeat(${sideLen}, 1fr)`;
                 divBox.innerHTML = "<div> </div>";
-                divBox.style.width = "15px";
-                divBox.style.height = "15px";
                 divBox.style.background = "limegreen";
                 divBox.style.margin = "0px";
                 divBox.classList.add("oneSquare");
                 divBox.addEventListener("mouseenter",function() {divBox.classList.add("revealed")})
                 divBox.addEventListener("mouseout",function() {divBox.classList.remove("revealed")})
-                    gridArea.append(divBox);}  
-                    };
+                gridArea.append(divBox);}  
+                };
     divGen(sideLen);
-})
+}})
+
