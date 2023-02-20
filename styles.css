@@ -1,23 +1,41 @@
 body{
         background: rgb(73, 88, 143);
+        text-align: center;
+        justify-content: center;
 }
 
 #gridArea {
         display: grid;
+        text-align: center;
         background-color: rgb(229, 225, 225);
         width: 960px;
         height: 960px;
         margin: 0px;
         padding: 0px;
+        justify-content: center;
 }
 
 .oneSquare{
-        background-color: limegreen;
+        background-color: rgb(218, 119, 21);
         margin: 0px;
         padding: 0px;
         opacity: 25%;
 }
 
-.revealed{
+#gridAreaContainer {
+        display:flex;
+        justify-content: center;
+        min-width: 1000px;
+}
+
+.slidercontainer{
+        background: black;
+}
+
+#sideLenSlider{
+        color: white;
+}
+
+.defaultModeRevealed{
         opacity: 100%
 }
