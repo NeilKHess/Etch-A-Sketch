@@ -1,6 +1,8 @@
 //Location references
 const gridArea = document.querySelector('#gridArea'); 
 const genButton = document.querySelector("#generateButton");
+const sideLenSlider = document.getElementById("#sideLenSlider");
+
 
 //Game Modes//
 // const defaultMode = funciton();
@@ -16,11 +18,15 @@ const genButton = document.querySelector("#generateButton");
 // const gridAreaColor = function();
 // const gridSquareColor = function();
 
+//sideLenSlider Listener
+//let sideLen = {sideLenSlider.onmousemove = (e) => updateSizeValue(e.sideLenSlider.value)};
+
+
 
 
 //Cycle Begins here
 genButton.addEventListener("click", function(){
-
+    console.log('clicked')
     //Clears results of any previous grid//
     function removeAllChildNodes(parent) {
         while (parent.firstChild) {
@@ -30,8 +36,7 @@ genButton.addEventListener("click", function(){
     removeAllChildNodes(gridArea);
 
     //Default Mode Generator
-    {let sideLenPrompt = prompt("How large would you like the sides of your square to be? (Max value = 100)")
-    let sideLen = sideLenPrompt;
+    let sideLen = document.getElementById('sideLenSlider').value;
     let divGen = function(sideLen){
         for (j = 0; j < sideLen; j++)  
         for (i = 0; i < sideLen; i++) {
@@ -47,7 +52,7 @@ genButton.addEventListener("click", function(){
                 gridArea.append(divBox);}  
                 };
     divGen(sideLen);
-}})
+})
 
 
 
