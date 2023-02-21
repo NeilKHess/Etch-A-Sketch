@@ -1,5 +1,5 @@
 body{
-        background: rgb(73, 88, 143);
+        background: blue;
         text-align: center;
         justify-content: center;
 }
@@ -15,11 +15,12 @@ body{
         justify-content: center;
 }
 
-.oneSquare{
-        background-color: rgb(218, 119, 21);
+.defaultSquare{
+        background-color: rgb(23, 188, 34);
         margin: 0px;
         padding: 0px;
         opacity: 25%;
+        font-size: small;
 }
 
 #gridAreaContainer {
@@ -30,6 +31,7 @@ body{
 
 .slidercontainer{
         background: black;
+        
 }
 
 #sideLenSlider{
@@ -38,4 +40,24 @@ body{
 
 .defaultModeRevealed{
         opacity: 100%
+}
+
+.button{
+        display: flex;
+        background:rgb(23, 188, 34);
+        font-size: x-large;
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #353232;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        }
+
+#buttonContainer {
+        display: flex;
+        justify-content: space-evenly;
 }
